@@ -58,7 +58,7 @@ function Demo () {
     formData.append('album', album)
 
     axios
-      .post('http://api-distroboy.herokuapp.com/', formData, {
+      .post('https://api-distroboy.herokuapp.com/', formData, {
       // .post('http://localhost:3009/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
@@ -68,7 +68,7 @@ function Demo () {
         console.log(res)
         setLoadingState(false)
         setCompletedState(
-          'http://api-distroboy.herokuapp.com/songs/' + 'res.songName'
+          'https://api-distroboy.herokuapp.com/songs/' + 'res.songName'
           // 'http://localhost:3009/songs/' + res.data.songName
         )
       })
