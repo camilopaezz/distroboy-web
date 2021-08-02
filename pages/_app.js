@@ -18,6 +18,7 @@ function MyApp ({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <html lang='en-us' />
         <title>DistroBoy</title>
 
         <meta property='og:url' content='http://www.distroboy.vercel.app/' />

@@ -23,7 +23,7 @@ function Navbar () {
         <Link href='/' passHref>
           <a>
             <HStack>
-              <Img h='20' src='/logo.svg' />
+              <Img alt='DistroBoy Logo' h='20' src='/logo.svg' />
               {!isSmall && (
                 <Text fontWeight='extrabold' fontSize='3xl'>
                   DistroBoy

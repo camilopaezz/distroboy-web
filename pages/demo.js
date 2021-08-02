@@ -56,6 +56,7 @@ function Demo () {
             <Box mb='4' mr='6'>
               <Box cursor='pointer' as='label' htmlFor='cover'>
                 <Img
+                  alt='your custom cover'
                   objectFit='contain'
                   borderRadius='lg'
                   overflow='hidden'

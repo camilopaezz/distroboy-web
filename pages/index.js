@@ -65,7 +65,7 @@ export default function Home () {
               Join us
             </Button>
           </Container>
-          <Img m='0 auto' src='/disc.png' w='95%' />
+          <Img alt='Some albums released by us' m='0 auto' src='/disc.webp' w='95%' />
         </Grid>
         <Box my={margin} textAlign='center' as='section'>
           <Heading
@@ -92,37 +92,37 @@ export default function Home () {
             What musicians think about us?
           </Heading>
           <Flex flexWrap='wrap' justifyContent='center'>
-            <OpinionCard artist='Kanye West' img='/profile/kanye.jpeg'>
+            <OpinionCard alt='Kanye West' artist='Kanye West' img='/profile/kanye.jpeg'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
               eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
               labore modi ipsa, libero et, aperiam error exercitationem optio quae
               odit!
             </OpinionCard>
-            <OpinionCard artist='MadLib' img='/profile/madlib.jpg'>
+            <OpinionCard alt='MadLib' artist='MadLib' img='/profile/madlib.jpg'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
               eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
               labore modi ipsa, libero et, aperiam error exercitationem optio quae
               odit!
             </OpinionCard>
-            <OpinionCard artist='MFDoom' img='/profile/mfdoom.jpeg'>
+            <OpinionCard alt='MFDoom' artist='MFDoom' img='/profile/mfdoom.jpeg'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
               eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
               labore modi ipsa, libero et, aperiam error exercitationem optio quae
               odit!
             </OpinionCard>
-            <OpinionCard artist='Quasimoto' img='/profile/lordquas.png'>
+            <OpinionCard aly='Quasimoto' artist='Quasimoto' img='/profile/lordquas.webp'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
               eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
               labore modi ipsa, libero et, aperiam error exercitationem optio quae
               odit!
             </OpinionCard>
-            <OpinionCard artist='Viktor Vaughn' img='/profile/viktor.jpg'>
+            <OpinionCard alt='Viktor Vaughn' artist='Viktor Vaughn' img='/profile/viktor.jpg'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
               eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
               labore modi ipsa, libero et, aperiam error exercitationem optio quae
               odit!
             </OpinionCard>
-            <OpinionCard artist='Metal Fingers' img='/profile/metal.jpg'>
+            <OpinionCard alt='Metal Fingers' artist='Metal Fingers' img='/profile/metal.webp'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
               eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
               labore modi ipsa, libero et, aperiam error exercitationem optio quae
