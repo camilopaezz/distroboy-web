@@ -12,6 +12,9 @@ import {
   Container,
   useToast
 } from '@chakra-ui/react'
+
+import Head from 'next/head'
+
 import OpinionCard from '../components/OpinionCard'
 import Footer from '../components/Footer'
 
@@ -26,6 +29,9 @@ export default function Home () {
 
   return (
     <>
+      <Head>
+        <title>Home | DistroBoy</title>
+      </Head>
       <VStack
         divider={<Divider stroke />}
         w={{ sm: '90%', lg: '80%', xl: '1200px' }}
