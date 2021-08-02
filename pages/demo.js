@@ -10,7 +10,7 @@ import {
 import { useState } from 'react'
 
 function Demo () {
-  const [{ cover, sound, name, album, author }, setFormData] = useState({
+  const [{ cover, name, album, author }, setFormData] = useState({
     cover: {
       blob: '/defaultArt.jpg'
     },
@@ -67,7 +67,7 @@ function Demo () {
                 type='file'
               />
             </Box>
-            {/* <Button mt='3' mr='6' cursor='pointer' as='label' htmlFor='sound'>
+            <Button mt='3' mr='6' cursor='pointer' as='label' htmlFor='sound'>
               Select Sound
               <input
                 required
@@ -78,7 +78,7 @@ function Demo () {
                 style={{ display: 'none' }}
                 type='file'
               />
-            </Button> */}
+            </Button>
           </Box>
           <Box>
             <FormControl isRequired mb='2'>
