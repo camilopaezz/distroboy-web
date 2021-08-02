@@ -5,6 +5,7 @@ import '@fontsource/inter/400.css'
 import '@fontsource/inter/700.css'
 import '@fontsource/inter/800.css'
 import '@fontsource/inter/900.css'
+
 import Head from 'next/head'
 
 const extendedTheme = extendTheme({
@@ -18,7 +19,6 @@ function MyApp ({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <html lang='en-us' />
         <title>DistroBoy</title>
 
         <meta property='og:url' content='http://www.distroboy.vercel.app/' />
@@ -31,6 +31,7 @@ function MyApp ({ Component, pageProps }) {
         <meta name='keywords' content='Distrokid, music, spotify, apple music, distribution, independent' />
         <meta name='robots' content='index, follow' />
       </Head>
+
       <ChakraProvider theme={extendedTheme}>
         <ColorModeScript initialColorMode='dark' />
         <Navbar />

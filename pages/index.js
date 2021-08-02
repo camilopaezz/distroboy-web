@@ -61,11 +61,28 @@ export default function Home () {
               In <b>DistroBoy</b> we are committed to help independent musicians
               to show their music to the world.
             </Text>
-            <Button px='16' colorScheme='orange' size='lg'>
+            <Button
+              onClick={() =>
+                toast({
+                  title: 'DistroBoy is in closed beta',
+                  duration: 10000,
+                  isClosable: true,
+                  description:
+                    'Our team is working now to give you our service soon...'
+                })}
+              px='16'
+              colorScheme='orange'
+              size='lg'
+            >
               Join us
             </Button>
           </Container>
-          <Img alt='Some albums released by us' m='0 auto' src='/disc.webp' w='95%' />
+          <Img
+            alt='Some albums released by us'
+            m='0 auto'
+            src='/disc.webp'
+            w='95%'
+          />
         </Grid>
         <Box my={margin} textAlign='center' as='section'>
           <Heading
@@ -92,41 +109,61 @@ export default function Home () {
             What musicians think about us?
           </Heading>
           <Flex flexWrap='wrap' justifyContent='center'>
-            <OpinionCard alt='Kanye West' artist='Kanye West' img='/profile/kanye.jpeg'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
-              eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
-              labore modi ipsa, libero et, aperiam error exercitationem optio quae
-              odit!
+            <OpinionCard
+              alt='Kanye West'
+              artist='Kanye West'
+              img='/profile/kanye.jpeg'
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Recusandae eaque eveniet nesciunt iusto cum rem maxime aut
+              doloribus amet labore modi ipsa, libero et, aperiam error
+              exercitationem optio quae odit!
             </OpinionCard>
             <OpinionCard alt='MadLib' artist='MadLib' img='/profile/madlib.jpg'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
-              eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
-              labore modi ipsa, libero et, aperiam error exercitationem optio quae
-              odit!
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Recusandae eaque eveniet nesciunt iusto cum rem maxime aut
+              doloribus amet labore modi ipsa, libero et, aperiam error
+              exercitationem optio quae odit!
             </OpinionCard>
-            <OpinionCard alt='MFDoom' artist='MFDoom' img='/profile/mfdoom.jpeg'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
-              eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
-              labore modi ipsa, libero et, aperiam error exercitationem optio quae
-              odit!
+            <OpinionCard
+              alt='MFDoom'
+              artist='MFDoom'
+              img='/profile/mfdoom.jpeg'
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Recusandae eaque eveniet nesciunt iusto cum rem maxime aut
+              doloribus amet labore modi ipsa, libero et, aperiam error
+              exercitationem optio quae odit!
             </OpinionCard>
-            <OpinionCard aly='Quasimoto' artist='Quasimoto' img='/profile/lordquas.webp'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
-              eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
-              labore modi ipsa, libero et, aperiam error exercitationem optio quae
-              odit!
+            <OpinionCard
+              aly='Quasimoto'
+              artist='Quasimoto'
+              img='/profile/lordquas.webp'
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Recusandae eaque eveniet nesciunt iusto cum rem maxime aut
+              doloribus amet labore modi ipsa, libero et, aperiam error
+              exercitationem optio quae odit!
             </OpinionCard>
-            <OpinionCard alt='Viktor Vaughn' artist='Viktor Vaughn' img='/profile/viktor.jpg'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
-              eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
-              labore modi ipsa, libero et, aperiam error exercitationem optio quae
-              odit!
+            <OpinionCard
+              alt='Viktor Vaughn'
+              artist='Viktor Vaughn'
+              img='/profile/viktor.jpg'
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Recusandae eaque eveniet nesciunt iusto cum rem maxime aut
+              doloribus amet labore modi ipsa, libero et, aperiam error
+              exercitationem optio quae odit!
             </OpinionCard>
-            <OpinionCard alt='Metal Fingers' artist='Metal Fingers' img='/profile/metal.webp'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
-              eaque eveniet nesciunt iusto cum rem maxime aut doloribus amet
-              labore modi ipsa, libero et, aperiam error exercitationem optio quae
-              odit!
+            <OpinionCard
+              alt='Metal Fingers'
+              artist='Metal Fingers'
+              img='/profile/metal.webp'
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Recusandae eaque eveniet nesciunt iusto cum rem maxime aut
+              doloribus amet labore modi ipsa, libero et, aperiam error
+              exercitationem optio quae odit!
             </OpinionCard>
           </Flex>
         </Box>
@@ -146,7 +183,7 @@ export default function Home () {
                 duration: 10000,
                 isClosable: true,
                 description:
-                'Our team is working now to give you our service soon...'
+                  'Our team is working now to give you our service soon...'
               })}
             px='16'
             colorScheme='orange'
