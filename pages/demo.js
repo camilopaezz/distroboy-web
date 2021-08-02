@@ -68,7 +68,7 @@ function Demo () {
         console.log(res)
         setLoadingState(false)
         setCompletedState(
-          'https://api-distroboy.herokuapp.com/songs/' + 'res.songName'
+          'https://api-distroboy.herokuapp.com/songs/' + res.data.songName
           // 'http://localhost:3009/songs/' + res.data.songName
         )
       })
