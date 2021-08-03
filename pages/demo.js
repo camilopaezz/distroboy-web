@@ -8,7 +8,8 @@ import {
   Button,
   CircularProgress,
   Text,
-  Heading
+  Heading,
+  useMediaQuery
 } from '@chakra-ui/react'
 import axios from 'axios'
 import Head from 'next/head'
@@ -19,6 +20,11 @@ import { GoLinkExternal } from 'react-icons/go'
 function Demo () {
   const [isLoading, setLoadingState] = useState(false)
   const [completed, setCompletedState] = useState('')
+  const [isLaptop] = useMediaQuery([
+    '(min-width: 1325px)'
+  ])
+
+  const margin = isLaptop ? '20' : '4'
 
   const [{ cover, name, sound, album, author }, setFormData] = useState({
     cover: {
@@ -114,7 +120,7 @@ function Demo () {
         display='flex'
         justifyContent='center'
         m='0 auto'
-        mt='20'
+        my={margin}
         borderWidth='1px'
         borderRadius='lg'
         w='100%'

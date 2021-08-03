@@ -20,12 +20,12 @@ import Footer from '../components/Footer'
 
 export default function Home () {
   const [isLaptop, isMobile] = useMediaQuery([
-    '(max-width: 1325px)',
+    '(min-width: 1325px)',
     '(max-width: 426px)'
   ])
 
   const toast = useToast()
-  const margin = isLaptop ? '4' : '20'
+  const margin = isLaptop ? '20' : '4'
 
   return (
     <>
@@ -33,14 +33,14 @@ export default function Home () {
         <title>Home | DistroBoy</title>
       </Head>
       <VStack
-        divider={<Divider stroke />}
+        divider={<Divider stroke w='80%' />}
         w={{ sm: '90%', lg: '80%', xl: '1200px' }}
         m='0 auto'
       >
         <Grid
           my={margin}
           as='section'
-          gridTemplateColumns={isLaptop ? '1fr' : '1.2fr 2fr'}
+          gridTemplateColumns={isLaptop ? '1.2fr 2fr' : '1fr'}
           gap='21px'
           placeItems='center'
           textAlign='center'
@@ -93,7 +93,7 @@ export default function Home () {
           >
             What we do?
           </Heading>
-          <Text maxInlineSize='50ch'>
+          <Text w='90%' m='0 auto' maxInlineSize='50ch'>
             DistroBoy help you to manage the monetization of your music, we have
             agreements with the principal music platforms like Spotify, Apple
             Music, Deezer, etc.
